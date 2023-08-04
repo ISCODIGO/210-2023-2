@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cap6_demo.PaintController">
+   <center>
+            <Canvas fx:id="canvas" height="400.0" onMouseClicked="#canvasMouseClicked" onMousePressed="#canvasMousePressed" onMouseReleased="#canvasMouseReleased" width="500.0" />
+   </center>
+   <top>
+      <FlowPane hgap="20.0" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#lineaClick" text="Linea" />
+            <Button mnemonicParsing="false" onAction="#ovaloClick" text="Ovalo" />
+            <Button mnemonicParsing="false" onAction="#rectanguloClick" text="Rectangulo" />
+            <Label text="Grosor" />
+            <Slider fx:id="slider" />
+         </children>
+      </FlowPane>
+   </top>
+</BorderPane>
